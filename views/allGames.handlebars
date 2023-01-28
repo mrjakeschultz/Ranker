@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/reset.css">
+<link rel="stylesheet" href="/styles.css">
+
+
+<h1>All Games</h1>
+
+
+<div class="games-container">
+  {{#each games}}
+    <div class="game-row" data-game-id={{id}}>
+      <div class="game-name">{{name}}</div>
+      <div class="game-genre">{{genre}}</div>
+      <div class="game-release-date">{{moment release_date 'YYYY/MM/DD'}}</div>
+      <div class="game-score">{{score_sum}}</div>
+      <div class="game-vote-buttons">
+        <button class="upvote-button" data-game-id={{id}}>Upvote</button>
+        <button class="downvote-button" data-game-id={{id}}>Downvote</button>
+      </div>
+    </div>
+  {{/each}}
+</div>
+
+<script>
+const userId = getUserIdFromSession({{userId}});
+</script>

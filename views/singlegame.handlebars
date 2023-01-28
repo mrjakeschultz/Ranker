@@ -1,0 +1,31 @@
+<div class="game-tiles">
+{{#each games}}
+<div class="title-content">
+    <div class="title">
+        
+       <h2>
+        {{name}}
+       </h2> 
+      <div class="game-genre">
+        <span class="font--medium">{{genre}}</span>
+      </div>
+    </div>
+
+    <div class="tile-information">
+        
+      <div class="game-release-date">
+        <p>🎮🕹️👾</p>
+       <p> THIS GAME WAS RELEASED ON {{release_date}} </p>
+       <p> PLATFORMs:{{platform}}</p> 
+
+      </div>
+      <div class="game-score">{{score_sum}}</div>
+      </div>
+      <div class="game-vote-buttons">
+        </div>
+        <button class="upvote-button" data-game-id={{id}}>Upvote</button>
+        <button class="downvote-button" data-game-id={{id}}>Downvote</button>
+      </div>
+    </div>
+    {{/each}}
+    </div>

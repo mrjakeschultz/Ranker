@@ -1,0 +1,230 @@
+
+
+
+body {
+	
+    font-family: 'Changa', sans-serif;
+    min-height:100vh;
+    background: linear-gradient(#2b1055,#7597de);
+}
+
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 50px;
+	background-color: #333;
+	color: #fff;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	margin: 0 10px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+/* for the All Games page */
+
+.card {
+	max-width: 500px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.card a {
+	color: #333;
+	text-decoration: none;
+}
+
+.games-container,
+.game-tiles {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	width:100%;
+}
+.game-row,
+.title-content {
+	border: 3px double greenyellow;
+	border-radius: 20px;
+	/* background-color: #cc0000; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	margin: 10px 0;
+	
+}
+.game-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.game-name,
+.game-genre,
+.game-release-date,
+.game-score {
+	/* background-color: #ccc; */
+	font-size: 20px;
+	margin: 0 10px;
+}
+
+.game-score {
+	font-weight: bold;
+}
+
+button {
+	margin:0 0.3em 0.3em 0; 
+	padding: 0.3em 1.2em;
+	display: inline-block;
+	box-sizing: border-box;
+	
+	border-radius:.5em;
+}
+.game-vote-buttons {
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+.upvote-button {
+	background-color: #90EE90;
+}
+.downvote-button {
+	background-color: #FA8072;
+}
+
+
+.upvote-btn {
+	background-color: #00cc00;
+	color: white;
+}
+
+.downvote-btn {
+	background-color: #cc0000;
+	color: white;
+}
+
+/* For the sign up form */
+
+form {
+	width: 30%;
+	margin: 0 auto;
+	text-align: center;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 20px;
+}
+
+form h1 {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+form label {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+form input[type="text"],
+form input[type="password"] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+form button[type="submit"] {
+	width: 100%;
+	background-color: #4caf50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+	background-color: #45a049;
+}
+
+/* for the Login form */
+#login-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 30%;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 20px;
+}
+
+#login-form label {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+#login-form input[type="email"],
+#login-form input[type="password"] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+#login-form input[type="submit"] {
+	width: 100%;
+	background-color: #4caf50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+#login-form input[type="submit"]:hover {
+	background-color: #45a049;
+}
+
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+
+@media screen and (min-width:560px) .all-container {
+	display: flex;
+	flex-direction: column
+}
